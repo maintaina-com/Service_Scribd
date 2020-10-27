@@ -1,7 +1,7 @@
 {
-    "name": "horde/service-scribd",
+    "name": "horde/service_scribd",
     "description": "Scribd client library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org",
     "license": "BSD-2-Clause",
     "authors": [
@@ -12,23 +12,21 @@
         }
     ],
     "version": "1.0.0alpha1",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Http": "^2",
-        "pear-pear.horde.org/Horde_Translation": "^2.2",
-        "pear-pear.horde.org/Horde_Xml_Element": "^2"
+        "horde/http": "dev-master",
+        "horde/translation": "dev-master",
+        "horde/xml_element": "dev-master"
     },
-    "replace": {
-        "pear-pear.horde.org/Horde_Service_Scribd": "1.*",
-        "pear-horde/Horde_Service_Scribd": "1.*"
-    },
+    "suggest": {},
     "autoload": {
         "psr-0": {
             "Horde_Service_Scribd": "lib/"
